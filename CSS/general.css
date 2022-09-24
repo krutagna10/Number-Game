@@ -16,8 +16,6 @@
     display: block;
 }
 
-
-
 .container {
     padding: 10rem 2rem; 
     max-width: 80rem;
@@ -25,4 +23,5 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 2rem;
 }

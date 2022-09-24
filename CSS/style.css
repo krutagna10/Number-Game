@@ -5,7 +5,7 @@
    --veryDarkColor: #222; 
    --darkColor: #333;
    --winBackground: #60b347;
-   --loseBackground: #fa5252;
+   --loseBackground: #d62828;
    --white: #eee;
 
    /* Typography */
@@ -17,6 +17,7 @@
    --fontSize16: 1rem;
    --fontSize18: 1.125rem;
    --fontSize20: 1.25rem;
+   --fontSize22: 1.375rem;
    --fontSize24: 1.5rem;
    --fontSize32: 2rem;
    --fontSize48: 3rem;
@@ -27,6 +28,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -40,6 +46,8 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 1rem 2rem;
+  align-items: center;
+  gap: 1rem;
 }
 
 .number {
@@ -67,14 +75,19 @@ body {
 
 .guess {
   font-family: inherit;
-  padding: 2rem 2rem;
+  padding: 2rem;
   max-width: 16rem;
   font-size: var(--fontSize48);
   border: 4px solid var(--white);
   color: var(--white);
-  background-color: var(--veryDarkColor);
+  background: none;
   margin-bottom: 2rem;
   text-align: center;
+  display: block;
+}
+
+.guess:focus {
+  outline: none;
 }
 
 .btn.check {
@@ -85,6 +98,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 3rem;
+  width: 30rem;
 }
 
 .label-score {
@@ -92,6 +106,6 @@ body {
 }
 
 .message {
-  font-size: var(--fontSize20);
+  font-size: var(--fontSize24);
 }
 
