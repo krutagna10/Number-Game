@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
+:root {
+   /* Colors */
+   --veryDarkColor: #222; 
+   --darkColor: #333;
+   --winBackground: #60b347;
+   --loseBackground: #fa5252;
+   --white: #eee;
+
+   /* Typography */
+   --pressStart2P: 'Press Start 2P', sans-serif;
+   --fontWeightMedium: 400;
+   --fontWeightBold: 700;
+   --fontSize12: 0.75rem;
+   --fontSize14: 0.875rem;
+   --fontSize16: 1rem;
+   --fontSize18: 1.125rem;
+   --fontSize20: 1.25rem;
+   --fontSize24: 1.5rem;
+   --fontSize32: 2rem;
+   --fontSize48: 3rem;
+   --fontSize64: 4rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--pressStart2P);
+  color: var(--white);
+  background-color: var(--veryDarkColor);
+  font-size: var(--fontSize18);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+.number {
+  background-color: var(--white);
+  width: 9rem;
+  height: 7rem;
+  font-size: var(--fontSize64);
+  color: var(--darkColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  position: relative;
+}
+
+.number::before {
+  content: '';
+  height: 0.5rem;
+  width: 100vw;
+  background-color: var(--white);
+  position: absolute;
+  top: 50%;
+  z-index: -1;
+}
+
+.guess {
+  font-family: inherit;
+  padding: 2rem 2rem;
+  max-width: 16rem;
+  font-size: var(--fontSize48);
+  border: 4px solid var(--white);
+  color: var(--white);
+  background-color: var(--veryDarkColor);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.btn.check {
+  margin: 0 auto;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.label-score {
+  margin-bottom: 2rem;
+}
+
+.message {
+  font-size: var(--fontSize20);
+}
+

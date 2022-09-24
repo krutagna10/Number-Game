@@ -1,0 +1,28 @@
+.primary-heading {
+    font-size: var(--fontSize32);
+    color: var(--white);
+    font-weight: var(--fontWeightBold);
+    text-align: center;
+    margin: 3rem 0rem 5rem 0rem;
+}
+
+.btn {
+    padding: 1rem 2rem;
+    font-family: inherit;
+    font-size: var(--fontSize20);
+    border: none;
+    background-color: var(--white);
+    color: var(--darkColor);
+    display: block;
+}
+
+
+
+.container {
+    padding: 10rem 2rem; 
+    max-width: 80rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
